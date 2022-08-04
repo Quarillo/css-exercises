@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
@@ -24,4 +24,56 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+/* Delete list styling and unnecessary margin and padding */
+li {
+  list-style: none;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+/* Flex for the whole page */
+.page-container {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Top and bottom links spread to the sides (with gaps from the edges) and stick to the edges */
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px; 
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 16px;
+
+}
+/* Center the content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling */
+button {
+  padding: 7px 15px;
+}
+
+.footer {
+  background-color: #eeeeee;
 }
